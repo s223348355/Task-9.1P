@@ -22,4 +22,6 @@
     <string name="show_all">Show All</string>
     <string name="new_advert">New Advert</string>
     <string name="home">Home</string>
+    <string name="get_current_location">GET CURRENT LOCATION</string>
+    <string name="show_on_map">Show On Map</string>
 </resources>

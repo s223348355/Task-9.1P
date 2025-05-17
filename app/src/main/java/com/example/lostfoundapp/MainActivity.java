@@ -31,10 +31,18 @@ public class MainActivity extends BaseActivity {
         Toolbar toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
 
+        Button btnMap = findViewById(R.id.btnMap);
+        btnMap.setOnClickListener(v -> {
+            startActivity(new Intent(this, MapsActivity.class));
+        });
+
+
         btnCreate = findViewById(R.id.btnCreate);
         btnShowall = findViewById(R.id.btnShowall);
+        btnMap = findViewById(R.id.btnMap);
 
         btnCreate.setOnClickListener(v -> startActivity(new Intent(this, new_advert.class)));
         btnShowall.setOnClickListener(v -> startActivity(new Intent(this, show_all.class)));
+        btnMap.setOnClickListener(v -> startActivity(new Intent(this, MapsActivity.class)));
     }
 }
